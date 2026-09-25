@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ur" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — TechUrdu</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-rocket"></i> TechUrdu
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="index.html#footer">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <!-- Profile Section -->
+            <div class="about-profile animate-on-scroll">
+                <img src="https://picsum.photos/seed/techurdu-avatar/300/300" alt="TechUrdu Team">
+                <div>
+                    <h1 style="margin-bottom: 0.5rem;">
+                        Hum Hain <span style="background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TechUrdu</span>
+                    </h1>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                        AI & Technology ko Urdu mein asaan banana — yahi hamara mission hai! 🚀
+                    </p>
+                </div>
+            </div>
+
+            <!-- Our Story -->
+            <div class="animate-on-scroll" style="margin-bottom: 3rem;">
+                <h2 style="color: var(--secondary); margin-bottom: 1rem;">
+                    <i class="fas fa-book"></i> Hamari Kahani
+                </h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    TechUrdu ek aisi jagah hai jahan hum AI, Programming, aur Technology ke baare mein Urdu aur Roman Urdu mein likhte hain. Hamara maqsad yeh hai ke technology ko har us shakhs tak pohanchayein jo English mein comfortable nahi hai.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    Aaj ke daur mein AI duniya badal rahi hai. Lekin zyada tar resources English mein hain. Hum is gap ko fill karna chahte hain — taake Pakistan aur India ke log bhi AI revolution ka hissa ban sakein.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    Chahe aap student ho, professional ho, ya bas curious ho — TechUrdu pe aapko simple, asaan, aur practical content milega jo aapki zindagi mein fark laaye.
+                </p>
+            </div>
+
+            <!-- What We Cover -->
+            <div class="animate-on-scroll" style="margin-bottom: 3rem;">
+                <h2 style="color: var(--secondary); margin-bottom: 1.5rem;">
+                    <i class="fas fa-laptop-code"></i> Hum Kya Cover Karte Hain
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;">
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: var(--radius-card); border: 1px solid var(--border-color);">
+                        <h3 style="margin-bottom: 0.5rem;">🤖 Artificial Intelligence</h3>
+                        <p style="color: var(--text-secondary);">AI ki basics se lekar advanced concepts tak — sab Urdu mein</p>
+                    </div>
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: var(--radius-card); border: 1px solid var(--border-color);">
+                        <h3 style="margin-bottom: 0.5rem;">💻 Programming</h3>
+                        <p style="color: var(--text-secondary);">Python, JavaScript aur doosri languages ke tutorials</p>
+                    </div>
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: var(--radius-card); border: 1px solid var(--border-color);">
+                        <h3 style="margin-bottom: 0.5rem;">🛠️ Free AI Tools</h3>
+                        <p style="color: var(--text-secondary);">Best free AI tools jo aapka kaam asaan kar dein</p>
+                    </div>
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: var(--radius-card); border: 1px solid var(--border-color);">
+                        <h3 style="margin-bottom: 0.5rem;">💰 Online Earning</h3>
+                        <p style="color: var(--text-secondary);">AI ki madad se ghar baithe paisa kamane ke tareeqe</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="animate-on-scroll">
+                <h2 style="color: var(--secondary); margin-bottom: 1.5rem;">
+                    <i class="fas fa-chart-bar"></i> TechUrdu in Numbers
+                </h2>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3>5+</h3>
+                        <p>Blog Posts</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>4</h3>
+                        <p>Categories</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>∞</h3>
+                        <p>Seekhne ka Jazba</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-rocket"></i> TechUrdu</h3>
+                    <p>AI aur Technology ke baare mein Urdu mein seekhein.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Latest posts seedha apne inbox mein!</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Apna email likhen..." required>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechUrdu. Made with ❤️ by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

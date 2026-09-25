@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ur" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | TechUrdu</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-rocket"></i> TechUrdu
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#footer">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Post Header -->
+    <section class="post-header">
+        <div class="container" id="post-header-content">
+            <!-- Populated by main.js -->
+        </div>
+    </section>
+
+    <!-- Post Image -->
+    <section>
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <img src="" alt="" class="post-image-main" id="post-main-image">
+        </div>
+    </section>
+
+    <!-- Post Content -->
+    <section>
+        <div class="post-content" id="post-content-container">
+            <!-- Populated by main.js -->
+        </div>
+    </section>
+
+    <!-- Share Section -->
+    <section>
+        <div class="share-section">
+            <span style="font-weight: 600;">Share karein:</span>
+            <button class="share-btn" data-platform="whatsapp" title="WhatsApp pe share karein">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+            <button class="share-btn" data-platform="facebook" title="Facebook pe share karein">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="share-btn" data-platform="twitter" title="Twitter pe share karein">
+                <i class="fab fa-twitter"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Back to Home Button -->
+    <section style="text-align: center; padding: 2rem 0 4rem;">
+        <a href="index.html" class="btn-primary">
+            <i class="fas fa-arrow-left"></i> Wapis Home Jayein
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-rocket"></i> TechUrdu</h3>
+                    <p>AI aur Technology ke baare mein Urdu mein seekhein.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Latest posts seedha apne inbox mein!</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Apna email likhen..." required>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechUrdu. Made with ❤️ by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/blog-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

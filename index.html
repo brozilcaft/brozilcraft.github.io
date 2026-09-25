@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ur" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechUrdu — AI & Technology Blog in Urdu</title>
+    <meta name="description" content="AI aur Technology ke baare mein Urdu mein seekhein. Beginners ke liye guides, tutorials, aur latest tech news.">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-rocket"></i> TechUrdu
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="animate-on-scroll">
+                Welcome to <span>TechUrdu</span>
+            </h1>
+            <p class="animate-on-scroll">
+                AI aur Technology ke baare mein Urdu mein seekhein. Beginners ke liye simple guides, tutorials, aur tips — bilkul FREE! 🚀
+            </p>
+            <a href="#blog-section" class="btn-primary animate-on-scroll">
+                <i class="fas fa-book-open"></i> Blogs Padhein
+            </a>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-filter-section" id="blog-section">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="search-bar animate-on-scroll">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Blog search karein...">
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter animate-on-scroll">
+                <button class="cat-pill active" data-category="All">All</button>
+                <button class="cat-pill" data-category="AI">🤖 AI</button>
+                <button class="cat-pill" data-category="Programming">💻 Programming</button>
+                <button class="cat-pill" data-category="Tools">🛠️ Tools</button>
+                <button class="cat-pill" data-category="Earning">💰 Earning</button>
+                <button class="cat-pill" data-category="Tutorial">📚 Tutorial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section>
+        <div class="container">
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog cards will be rendered by main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-col">
+                    <h3><i class="fas fa-rocket"></i> TechUrdu</h3>
+                    <p>AI aur Technology ke baare mein Urdu mein seekhein. Hamara mission hai technology ko har Pakistani ke liye accessible banana.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Latest posts aur updates seedha apne inbox mein paayen!</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Apna email likhen..." required>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechUrdu. Made with ❤️ by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/blog-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
